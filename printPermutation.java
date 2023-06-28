@@ -1,4 +1,4 @@
-import java.sql.Array;
+
 import java.util.*;
 public class printPermutation {
     public static void main(String[] args) {
