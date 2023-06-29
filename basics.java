@@ -1,8 +1,11 @@
 public class basics {
+    
+    static int k=7;
     public static void main(String[] args) {
         System.out.println("main started ");
         firstFunction();
         System.out.println("main end ");
+     
     }
 
     public static void firstFunction() {
