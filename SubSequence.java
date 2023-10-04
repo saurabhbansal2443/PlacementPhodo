@@ -10,26 +10,23 @@ public class SubSequence {
     }
 
     public static ArrayList<String> getSubsquence(String str) {
+        ArrayList<String> ans = new ArrayList<>();
+
         if(str.length()==0){
-            ArrayList<String> base = new ArrayList<>();
-            base.add("");
-            return base;
+            ans.add("");
+            return ans ;
         }
 
         char ch = str.charAt(0);
-
         String rem = str.substring(1);
 
         ArrayList<String> rres = getSubsquence(rem);
 
-       ArrayList<String> ans = new ArrayList<>();
+        for(String s : rres ){
+            ans.add(s);
+            ans.add(ch+s);
+        }
 
-       for(String s : rres){
-          ans.add(s);
-          ans.add(ch+s);
-       }
-
-       return ans ;
-
+        return ans ;
     }
 }

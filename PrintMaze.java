@@ -1,3 +1,4 @@
+
 public class PrintMaze {
     public static void main(String[] args) {
         int sr =0;
